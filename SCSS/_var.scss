@@ -1,0 +1,29 @@
+// Colours
+
+$stone-100: hsl(30, 54%, 90%);
+$stone-150: hsl(30, 18%, 87%);
+$stone-600: hsl(30, 10%, 34%);
+$stone-900: hsl(24, 5%, 18%);
+
+$brown-800: hsl(14, 45%, 36%);
+
+$rose-800: hsl(332, 51%, 32%);
+$rose-50: hsl(330, 100%, 98%);
+
+// Typograhy
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+$fs-base: 16px; /* Body Copy */
+$ff-young: "Young Serif" sans-serif;
+$ff-outfit: "Outfit", sans-serif;
+
+// Weights
+$fw-400: 400;
+$fw-600: 600;
+$fw-700: 700;
+
+// breakpoints
+
+$bp-mobile: 375px;
+$bp-desktop: 1440px;

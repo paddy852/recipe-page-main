@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Body Copy */
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 8;
+}
+main h1 {
+  font-family: "Young Serif" sans-serif;
+  font-size: 2.5rem;
+}
+main p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+}
+main .panel {
+  grid-column: 2/span 6;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 5rem 10rem;
+}
+main .panel .head img {
+  border-radius: 0.5rem;
+}
+main hr {
+  border: none;
+  border-top: 1px solid #999; /* Solid line */
+  margin: 20px 0; /* Spacing around the line */
+}
+
+.prep {
+  grid-column: 3/span 4;
+  background-color: hsl(330, 100%, 98%);
+  padding: 0.5rem 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "Outfit", sans-serif;
+}
+.prep h3 {
+  color: hsl(332, 51%, 32%);
+}
+.prep ul li {
+  padding-left: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+.prep ul li:last-child {
+  padding-bottom: 0;
+}
+
+.ingredients {
+  grid-column: 3/span 4;
+  padding: 0.5rem 1.5rem;
+}
+.ingredients h3 {
+  font-family: "Young Serif" sans-serif;
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+}
+.ingredients ul li {
+  font-family: "Outfit", sans-serif;
+  padding-left: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+.ingredients ul li:last-child {
+  padding-bottom: 0;
+}
+
+.instructions {
+  grid-column: 3/span 4;
+  padding: 0.5rem 1.5rem;
+}
+.instructions h3 {
+  font-family: "Young Serif" sans-serif;
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+}
+.instructions ol li {
+  font-family: "Outfit", sans-serif;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+  padding-left: 2rem;
+}
+.instructions ol li p {
+  color: black;
+  font-weight: 400;
+}
+
+.nutrition {
+  grid-column: 3/span 4;
+  padding: 0.5rem 1.5rem;
+  font-family: "Outfit", sans-serif;
+}
+.nutrition h3 {
+  font-family: "Young Serif" sans-serif;
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+}
+.nutrition table {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.nutrition table tr td {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.red {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 975px) {
+  main {
+    display: block;
+    width: 100%;
+  }
+  main .panel {
+    margin: 0;
+    padding: 0;
+  }
+  main .panel .head .recipe-details {
+    padding: 0 2rem;
+  }
+  main .panel .head img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  main .panel .prep {
+    margin: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
